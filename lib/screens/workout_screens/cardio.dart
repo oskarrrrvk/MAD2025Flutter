@@ -1,8 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:mad2025/widgets/map.dart';
 
-class cardio extends StatelessWidget {
+class RunningPage extends StatefulWidget {
+  @override
+  _RunningPage createState()=>_RunningPage();
+}
+
+class _RunningPage extends State<RunningPage> {
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text('PAGINA CORRER'));
+    return Scaffold(
+      appBar: AppBar(title: const Text('RUNNING')),
+      body: createMap(),
+    );
   }
 }
