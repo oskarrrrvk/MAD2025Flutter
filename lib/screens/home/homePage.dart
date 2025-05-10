@@ -15,9 +15,9 @@ class _HomePageState extends State<HomePage> {
 
   final List<Widget> _screens = [
     const Center(child: Text("HOME")),
-    workout_logger(),
     RunningPage(),
-    history(),
+    WorkoutLoggerScreen(),
+    HistoryScreen(),
   ];
 
   @override
