@@ -1,6 +1,6 @@
 import 'package:geolocator/geolocator.dart';
 
-Future<Position> _determinePosition() async {
+Future<Position> determineCenterMap() async {
   bool serviceEnabled;
   LocationPermission permission;
 

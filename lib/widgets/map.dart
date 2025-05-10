@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
+import 'package:geolocator/geolocator.dart';
 import 'package:latlong2/latlong.dart';
 
-Widget createMap(){
+import 'package:mad2025/widgets/coordinates.dart';
+
+Future<Widget> createMap() async {
+  Position position = await determineCenterMap();
   return FlutterMap(options: MapOptions(
-      initialCenter: LatLng(40.38923590951672, -3.627749768768932),
+      initialCenter: LatLng(position.altitude, position.longitude),
       initialZoom: 16.0
   ), children: [
     TileLayer(

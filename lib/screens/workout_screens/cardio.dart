@@ -11,7 +11,7 @@ class _RunningPage extends State<RunningPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('RUNNING')),
-      body: createMap(),
+      body: await createMap(),
     );
   }
 }
