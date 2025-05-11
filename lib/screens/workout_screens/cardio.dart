@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:geolocator/geolocator.dart';
 import 'package:mad2025/widgets/map.dart';
+import 'package:mad2025/widgets/coordinates.dart';
 
 class RunningPage extends StatefulWidget {
   @override
@@ -11,7 +13,7 @@ class _RunningPage extends State<RunningPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('RUNNING')),
-      body: await createMap(),
+      body: createMap(),
     );
   }
 }
