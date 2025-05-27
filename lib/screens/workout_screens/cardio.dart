@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:mad2025/widgets/map.dart';
 
 class RunningPage extends StatefulWidget {
+  const RunningPage({super.key});
+
   @override
   _RunningPage createState()=>_RunningPage();
 }
@@ -11,7 +13,7 @@ class _RunningPage extends State<RunningPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('RUNNING')),
-      body: await createMap(),
+     // body: await createMap(),
     );
   }
 }

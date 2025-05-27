@@ -1,48 +1,60 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:mad2025/screens/home/homePage.dart';
 
-void createRegisterDialog(BuildContext context){
-  TextEditingController userName = TextEditingController();
-  TextEditingController password = TextEditingController();
+void createRegisterDialog(BuildContext context) {
+  TextEditingController emailController = TextEditingController();
+  TextEditingController passwordController = TextEditingController();
 
-  showDialog(context: context,
-    builder: (BuildContext context){
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
       return AlertDialog(
-        title: const Text("LOGIN"),
+        title: const Text("REGISTER"),
         content: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
             TextField(
-              controller: userName,
-              decoration: const InputDecoration(labelText: "username"),
+              controller: emailController,
+              decoration: const InputDecoration(labelText: "Email"),
             ),
             TextField(
-              controller: password,
-              decoration: const InputDecoration(labelText: "password"),
-            )
+              controller: passwordController,
+              decoration: const InputDecoration(labelText: "Password"),
+              obscureText: true,
+            ),
           ],
         ),
         actions: [
           ElevatedButton(
-            child: const Text("Cancell"),
+            child: const Text("Cancel"),
             onPressed: () => Navigator.of(context).pop(),
           ),
           ElevatedButton(
-              child: const Text("Submit"),
-              onPressed:(){
-                saveUser(userName.text, password.text);
+            child: const Text("Submit"),
+            onPressed: () async {
+              try {
+                await FirebaseAuth.instance.createUserWithEmailAndPassword(
+                  email: emailController.text.trim(),
+                  password: passwordController.text,
+                );
 
-                Navigator.push(
+                Navigator.of(context).pop();
+                Navigator.pushReplacement(
                   context,
                   MaterialPageRoute(builder: (context) => const HomePage()),
                 );
+              } catch (e) {
+                Navigator.of(context).pop();
+
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text('Registration failed: ${e.toString()}')),
+                );
               }
-          )
+            },
+          ),
         ],
       );
     },
   );
-}
-
-void saveUser(String userName, String password){
-
 }
