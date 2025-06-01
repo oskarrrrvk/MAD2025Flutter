@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:geolocator/geolocator.dart';
 import 'package:mad2025/widgets/map.dart';
-import 'package:mad2025/widgets/coordinates.dart';
 
 class RunningPage extends StatefulWidget {
   @override
