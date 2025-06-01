@@ -4,6 +4,8 @@ import 'package:mad2025/screens/workout_screens/create_routine.dart';
 import 'package:mad2025/screens/workout_screens/routine_detail.dart';
 
 class WorkoutLoggerScreen extends StatefulWidget {
+  const WorkoutLoggerScreen({super.key});
+
   @override
   State<WorkoutLoggerScreen> createState() => _WorkoutLoggerScreenState();
 }
