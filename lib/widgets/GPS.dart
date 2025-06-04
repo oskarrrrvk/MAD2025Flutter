@@ -54,7 +54,7 @@ void trackroute(){
 
 Future<void> saveRoute() async {
   final directory = await getApplicationDocumentsDirectory();
-  final file = File('${directory.path}/flutter/gps_coordinates.csv');
+  final file = File('${directory.path}/gps_coordinates.csv');
   print(directory.path);
   String content = route
       .map((coord) => '${coord.latitude},${coord.longitude}')
