@@ -3,8 +3,8 @@ import 'package:path/path.dart';
 import '../screens/workout_screens/routine.dart';
 
 class RoutineDatabase {
-  RoutineDatabase._privateConstructor(); // Private constructor for the singleton
-  static final RoutineDatabase instance = RoutineDatabase._privateConstructor(); // Singleton instance
+  RoutineDatabase._privateConstructor();
+  static final RoutineDatabase instance = RoutineDatabase._privateConstructor();
 
   static Database? _database;
 
@@ -21,35 +21,34 @@ class RoutineDatabase {
       onCreate: (db, version) async {
         await db.execute('''
  CREATE TABLE routines(
- id INTEGER PRIMARY KEY AUTOINCREMENT,
  name TEXT,
- Push Ups INTEGER,
+ Push_Ups INTEGER,
  Squats INTEGER,
- Pull Ups INTEGER,
+ Pull_Ups INTEGER,
  Deadlifts INTEGER,
  Lunges INTEGER,
- Jumping Jacks INTEGER,
- Bench Press INTEGER,
- Shoulder Press INTEGER,
- Bicep Curls INTEGER,
- Tricep Dips INTEGER,
+ Jumping_Jacks INTEGER,
+ Bench_Press INTEGER,
+ Shoulder_Press INTEGER,
+ Bicep_Curls INTEGER,
+ Tricep_Dips INTEGER,
  Plank INTEGER,
- Mountain Climbers INTEGER,
+ Mountain_Climbers INTEGER,
  Burpees INTEGER,
  Crunches INTEGER,
- Leg Raises INTEGER,
- Russian Twists INTEGER,
- Calf Raises INTEGER,
- Hip Thrusts INTEGER,
- Lat Pulldowns INTEGER,
- Chest Flyes INTEGER,
- Cable Rows INTEGER,
- Overhead Triceps Extension INTEGER,
- Hammer Curls INTEGER,
- Kettlebell Swings INTEGER,
- Wall Sits INTEGER, 
- Step Ups INTEGER,
- Glute Bridges INTEGER
+ Leg_Raises INTEGER,
+ Russian_Twists INTEGER,
+ Calf_Raises INTEGER,
+ Hip_Thrusts INTEGER,
+ Lat_Pulldowns INTEGER,
+ Chest_Flyes INTEGER,
+ Cable_Rows INTEGER,
+ Overhead_Triceps_Extension INTEGER,
+ Hammer_Curls INTEGER,
+ Kettlebell_Swings INTEGER,
+ Wall_Sits INTEGER, 
+ Step_Ups INTEGER,
+ Glute_Bridges INTEGER
  )
  ''');
       },

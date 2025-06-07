@@ -25,11 +25,11 @@ class RoutineDetailScreen extends StatelessWidget {
                 MaterialPageRoute(builder: (_) => StartRoutineScreen(routine: routine)),
               );
             },
-            child: Text("Empezar Rutina"),
+            child: Text("Start Routine"),
           ),
           ElevatedButton(
             onPressed: () => Navigator.pop(context),
-            child: Text("Volver"),
+            child: Text("go back"),
           ),
         ],
       ),

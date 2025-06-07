@@ -3,35 +3,44 @@ class RoutineModel {
   final List<String> exercises;
 
   RoutineModel({required this.name, required this.exercises});
+  factory RoutineModel.fromMap(Map<String, dynamic> map) {
+    return RoutineModel(
+      name: map['name'] ?? 'routine without name',
+      exercises: map.entries
+          .where((entry) => entry.key != 'name' && entry.value == 1)
+          .map((entry) => entry.key)
+          .toList(),
+    );
+  }
 }
 
 List<RoutineModel> routines = [];
 final List<String> allExercises = [
-  'Push Ups',
+  'Push_Ups',
   'Squats',
-  'Pull Ups',
+  'Pull_Ups',
   'Deadlifts',
   'Lunges',
-  'Jumping Jacks',
-  'Bench Press',
-  'Shoulder Press',
-  'Bicep Curls',
-  'Tricep Dips',
+  'Jumping_Jacks',
+  'Bench_Press',
+  'Shoulder_Press',
+  'Bicep_Curls',
+  'Tricep_Dips',
   'Plank',
-  'Mountain Climbers',
+  'Mountain_Climbers',
   'Burpees',
   'Crunches',
-  'Leg Raises',
-  'Russian Twists',
-  'Calf Raises',
-  'Hip Thrusts',
-  'Lat Pulldowns',
-  'Chest Flyes',
-  'Cable Rows',
-  'Overhead Triceps Extension',
-  'Hammer Curls',
-  'Kettlebell Swings',
-  'Wall Sits',
-  'Step Ups',
-  'Glute Bridges'
+  'Leg_Raises',
+  'Russian_Twists',
+  'Calf_Raises',
+  'Hip_Thrusts',
+  'Lat_Pulldowns',
+  'Chest_Flyes',
+  'Cable_Rows',
+  'Overhead_Triceps_Extension',
+  'Hammer_Curls',
+  'Kettlebell_Swings',
+  'Wall_Sits',
+  'Step_Ups',
+  'Glute_Bridges'
 ];

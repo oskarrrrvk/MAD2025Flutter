@@ -11,7 +11,7 @@ class WorkoutLoggerScreen extends StatefulWidget {
 }
 
 class _WorkoutLoggerScreenState extends State<WorkoutLoggerScreen> {
-  void refresh() => setState(() {}); // Actualiza la UI tras crear rutina
+  void refresh() => setState(() {});
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +52,6 @@ class _WorkoutLoggerScreenState extends State<WorkoutLoggerScreen> {
           ),
           ElevatedButton(
             onPressed: () {
-              // Aquí puedes poner Navigator.push() para FreeWorkoutScreen
             },
             child: Text("Free Workout"),
           ),
