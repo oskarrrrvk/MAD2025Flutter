@@ -32,8 +32,6 @@ class CreateRoutineScreenState extends State<CreateRoutineScreen> {
       );
       routines.add(routine);
       db.insertRoutine(routine);
-      List<Map<String, dynamic>> dbRutines = await db.getRoutines();
-      print(dbRutines);
       widget.onRoutineCreated();
       Navigator.pop(context);
     }
@@ -42,14 +40,14 @@ class CreateRoutineScreenState extends State<CreateRoutineScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Crear Rutina")),
+      appBar: AppBar(title: Text("Create Routine")),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
             TextField(
               controller: _nameController,
-              decoration: InputDecoration(labelText: "Nombre de la rutina"),
+              decoration: InputDecoration(labelText: "Routine's name"),
             ),
             Expanded(
               child: ListView(
@@ -65,11 +63,11 @@ class CreateRoutineScreenState extends State<CreateRoutineScreen> {
             ),
             ElevatedButton(
               onPressed: createRoutine,
-              child: Text("Crear"),
+              child: Text("Create"),
             ),
             TextButton(
               onPressed: () => Navigator.pop(context),
-              child: Text("Cancelar"),
+              child: Text("Cancel"),
             )
           ],
         ),
