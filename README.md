@@ -4,8 +4,8 @@
 
 ## Workspace
 GitHub:
-  - Repository: [Gym4U](YOUR_REPOSITORY_LINK_HERE)
-  - Releases: [Releases](YOUR_RELEASES_LINK_HERE)
+  - Repository: [Gym4U](https://github.com/oskarrrrvk/MAD2025Flutter)
+  - Releases: [Releases](https://github.com/oskarrrrvk/MAD2025Flutter/releases)
 
 ---
 
