@@ -15,46 +15,50 @@ Gym4U is a comprehensive fitness application designed to empower users in tracki
 ---
 
 ## Activity's Screenshots
-![Login Page](img/LoginPage.png)
+![Login Page](imagenes/loginPage.png)
 <p align="center"><em>Figure 1: User Login Screen</em></p>
 
-![Register Dialog](img/Registerdialog.png)
+![Register Dialog](imagenes/registerDialog.png)
 <p align="center"><em>Figure 2: New User Registration</em></p>
 
-![Home Page](img/homePage.png)
-<p align="center"><em>Figure 3: Main Application Dashboard</em></p>
+![Login Dialog](imagenes/loginDialog.png)
+<p align="center"><em>Figure 3: Login Input Dialog</em></p>
 
-![Workout Page](img/WorkoutPage.png)
-<p align="center"><em>Figure 4: Workout Tracking Interface</em></p>
+![Home Page](imagenes/homePage.png)
+<p align="center"><em>Figure 4: Main Application Dashboard</em></p>
 
-![Create Workout Dialog](img/createWorkoutDialog.png)
-<p align="center"><em>Figure 5: Creating a Custom Workout</em></p>
+![Workout Page](imagenes/workoutPage.png)
+<p align="center"><em>Figure 5: Workout Tracking Interface</em></p>
 
-![Routine Definition Page](img/routineDefinitionPage.png)
-<p align="center"><em>Figure 6: Defining a Workout Routine</em></p>
+![Create Workout Dialog](imagenes/createWorkoutDialog.png)
+<p align="center"><em>Figure 6: Creating a Custom Workout</em></p>
 
-![Running Page](img/RunningPAge.png)
-<p align="center"><em>Figure 7: Cardio Tracking with Map</em></p>
+![Routine Definition Page](imagenes/RoutineDefinitionPage.png)
+<p align="center"><em>Figure 7: Defining a Workout Routine</em></p>
 
-![History Page](img/HistoryPage.png)
-<p align="center"><em>Figure 8: Activity History Overview</em></p>
+![Running Page](imagenes/runningPage.png)
+<p align="center"><em>Figure 8: Cardio Tracking with Map</em></p>
 
-![History Details](img/historyDetails.png)
-<p align="center"><em>Figure 9: Detailed Activity Information</em></p>
+![History Page](imagenes/historyPage.png)
+<p align="center"><em>Figure 9: Activity History Overview</em></p>
 
-![Coordinates File](img/coordinatesFile.png)
-<p align="center"><em>Figure 10: Exported Route Coordinates (CSV)</em></p>
+![History Details](imagenes/historyDetails.png)
+<p align="center"><em>Figure 10: Detailed Activity Information</em></p>
 
-![Firebase Example](img/fireBAse.png)
-<p align="center"><em>Figure 11: Example of Data Stored in Firebase</em></p>
+![Coordinates File](imagenes/coordinatesFile.png)
+<p align="center"><em>Figure 11: Exported Route Coordinates (CSV)</em></p>
 
-![File System](img/fileSystem.png)
-<p align="center"><em>Figure 12: Project File Structure Overview</em></p>
+![Firebase Example](imagenes/FireBase.png)
+<p align="center"><em>Figure 12: Example of Data Stored in Firebase</em></p>
+
+![File System](imagenes/fileSystem.png)
+<p align="center"><em>Figure 13: Project File Structure Overview</em></p>
+
 
 ---
 
 ## Video
-[YouTube](YOUR_YOUTUBE_VIDEO_LINK_HERE)
+[YouTube](https://youtu.be/VlL5GKDBLC8)
 
 ---
 
